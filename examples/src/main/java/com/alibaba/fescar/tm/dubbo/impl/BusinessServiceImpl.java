@@ -81,6 +81,6 @@ public class BusinessServiceImpl implements BusinessService {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
             new String[] {"dubbo-business.xml"});
         final BusinessService business = (BusinessService)context.getBean("business");
-        business.purchase("U100001", "C00321", 2);
+        business.purchase("U100001", "C00321", 20);
     }
 }
